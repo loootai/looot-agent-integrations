@@ -1,0 +1,9 @@
+{
+  "$schema": "https://charm.land/crush.json",
+  "mcp": {
+    "looot": {
+      "type": "http",
+      "url": "https://api.looot.ai/mcp"
+    }
+  }
+}

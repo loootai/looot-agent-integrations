@@ -1,0 +1,11 @@
+# Merge into ~/.config/goose/config.yaml. Or open the deeplink in the README for browser sign-in.
+extensions:
+  looot:
+    name: looot
+    type: streamable_http
+    uri: https://api.looot.ai/mcp
+    headers:
+      Authorization: "Bearer ${LOOOT_TOKEN}"
+    env_keys: [LOOOT_TOKEN]
+    enabled: true
+    timeout: 300

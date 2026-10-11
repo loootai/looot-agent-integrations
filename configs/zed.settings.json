@@ -1,0 +1,7 @@
+{
+  "context_servers": {
+    "looot": {
+      "url": "https://api.looot.ai/mcp"
+    }
+  }
+}

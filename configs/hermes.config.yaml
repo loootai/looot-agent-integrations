@@ -1,0 +1,6 @@
+# Merge into ~/.hermes/config.yaml. ${LOOOT_TOKEN} resolves from the environment or ~/.hermes/.env.
+mcp_servers:
+  looot:
+    url: "https://api.looot.ai/mcp"
+    headers:
+      Authorization: "Bearer ${LOOOT_TOKEN}"

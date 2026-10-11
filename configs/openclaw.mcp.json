@@ -1,0 +1,10 @@
+{
+  "mcp": {
+    "servers": {
+      "looot": {
+        "url": "https://api.looot.ai/mcp",
+        "transport": "streamable-http"
+      }
+    }
+  }
+}

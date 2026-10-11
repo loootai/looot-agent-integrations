@@ -1,0 +1,9 @@
+{
+  "mcp": {
+    "looot": {
+      "type": "remote",
+      "url": "https://api.looot.ai/mcp",
+      "enabled": true
+    }
+  }
+}

@@ -1,0 +1,8 @@
+# Save as .continue/mcpServers/looot.yaml
+name: looot
+version: 0.0.1
+schema: v1
+mcpServers:
+  - name: looot
+    type: streamable-http
+    url: https://api.looot.ai/mcp

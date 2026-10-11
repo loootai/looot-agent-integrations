@@ -1,0 +1,10 @@
+id: looot
+name: looot
+description: One key and one prepaid balance for 2,500+ data API endpoints. Search the catalog, read the price, run the call.
+author: loootai
+url: https://github.com/loootai/looot-mcp
+category: data
+content:
+  - name: Remote
+    content: |
+      {"type":"streamable-http","url":"https://api.looot.ai/mcp"}
