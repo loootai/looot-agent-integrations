@@ -85,6 +85,18 @@ Or `configs/codex.config.toml`. With a token, `configs/codex.token.config.toml` 
 
 `configs/crush.json` into your Crush config.
 
+## Amp
+
+Amp recommends loading MCP servers from a skill, so the tools load only when a task needs them. `amp/skills/looot` holds a `SKILL.md` and an `mcp.json` that points at `https://api.looot.ai/mcp`. Copy that folder to `.agents/skills/looot` in a project or `~/.config/agents/skills/looot` for every project, or run `amp skill add https://github.com/loootai/looot-agent-integrations`. The first looot call opens the sign-in page in your browser.
+
+Without the skill, add the server directly:
+
+```
+amp mcp add looot https://api.looot.ai/mcp
+```
+
+Or merge `configs/amp.settings.json` (`amp.mcpServers`) into your Amp settings. With a token instead of browser sign-in, add `"headers": { "Authorization": "Bearer ${LOOOT_TOKEN}" }` to the `looot` entry.
+
 ## Claude Code, Cursor, VS Code, Windsurf
 
 See https://github.com/loootai/looot-mcp and https://github.com/loootai/looot-plugin.

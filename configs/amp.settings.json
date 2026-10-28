@@ -1,0 +1,7 @@
+{
+  "amp.mcpServers": {
+    "looot": {
+      "url": "https://api.looot.ai/mcp"
+    }
+  }
+}

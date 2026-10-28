@@ -44,6 +44,14 @@ for s in (root / "skills").glob("*/SKILL.md"):
     if "description:" not in fm:
         errors.append(f"{s}: no description")
 
+# Amp skill: SKILL.md name equals folder, mcp.json points at the server
+amp = root / "amp/skills/looot"
+if json.loads((amp / "mcp.json").read_text())["looot"]["url"] != URL:
+    errors.append("amp mcp.json: wrong url")
+if not re.match(r"---\nname: looot\n", (amp / "SKILL.md").read_text()):
+    errors.append("amp SKILL.md: name must be looot")
+assert json.loads((root / "configs/amp.settings.json").read_text())["amp.mcpServers"]["looot"]["url"] == URL
+
 # kilo marketplace entry required fields
 k = (root / "kilo-marketplace/mcps/looot/MCP.yaml").read_text()
 for f in ("id", "name", "description", "author", "url", "category", "content"):
