@@ -1,6 +1,6 @@
 # looot agent integrations
 
-Config snippets and a starter skill to add [looot](https://looot.ai) to open-source agent platforms. looot is one key and one prepaid balance for 2,500+ data API endpoints. The MCP server is `https://api.looot.ai/mcp` (streamable HTTP). It signs you in through the browser. For CI or a headless box, create an agent token at https://looot.ai (Settings, Agent tokens) and export it as `LOOOT_TOKEN`.
+Config snippets and a starter skill to add [looot](https://looot.ai) to open-source agent platforms. looot is one key and one prepaid balance for 4,200+ data API endpoints. The MCP server is `https://api.looot.ai/mcp` (streamable HTTP). It signs you in through the browser. For CI or a headless box, create an agent token at https://looot.ai (Settings, Agent tokens) and export it as `LOOOT_TOKEN`.
 
 Every snippet is in `configs/` and is checked by `python3 scripts/validate.py` (JSON, TOML, YAML parse, skill frontmatter, no secrets). Merge a snippet into your existing config. Do not overwrite your other servers.
 

@@ -1,6 +1,6 @@
 ---
 name: looot-quickstart
-description: Use when a task needs live or external data (work emails, company and people enrichment, SERP, keyword volume, backlinks, web pages, news). Search looot's 2,500+ endpoints by the job, read the price, run one call.
+description: Use when a task needs live or external data (work emails, company and people enrichment, SERP, keyword volume, backlinks, web pages, news). Search looot's 4,200+ endpoints by the job, read the price, run one call.
 version: 1.0.0
 metadata:
   openclaw:
@@ -12,7 +12,7 @@ metadata:
 
 # looot quickstart
 
-looot is one key and one prepaid balance for 2,500+ data API endpoints from 90+ providers. Searching the catalog and reading prices is free. A failed call costs nothing.
+looot is one key and one prepaid balance for 4,200+ data API endpoints from 300+ providers. Searching the catalog and reading prices is free. A failed call costs nothing.
 
 ## With the MCP server
 
