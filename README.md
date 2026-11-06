@@ -99,7 +99,7 @@ Or merge `configs/amp.settings.json` (`amp.mcpServers`) into your Amp settings. 
 
 ## Claude Code, Cursor, VS Code, Windsurf
 
-See https://github.com/loootai/looot-mcp and https://github.com/loootai/looot-plugin.
+See https://github.com/loootai/looot-mcp and https://github.com/loootai/looot-plugin. Cursor users can also find looot at https://cursor.directory/plugins/looot.
 
 ## Not covered
 
