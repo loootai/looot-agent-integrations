@@ -31,6 +31,15 @@ assert oc["mcp"]["looot"]["type"] == "remote", "opencode type"
 assert json.loads((root / "configs/zed.settings.json").read_text())["context_servers"]["looot"]["url"] == URL
 assert "mcp_servers" in tomllib.loads((root / "configs/codex.config.toml").read_text())
 
+# key names that differ per agent: a wrong one silently drops the server
+def load(name): return json.loads(strip_jsonc((root / "configs" / name).read_text()))
+assert load("antigravity.mcp_config.json")["mcpServers"]["looot"]["serverUrl"] == URL, "antigravity uses serverUrl"
+assert load("qwen.settings.json")["mcpServers"]["looot"]["httpUrl"] == URL, "qwen streamable HTTP uses httpUrl"
+assert load("mimocode.jsonc")["mcp"]["looot"]["type"] == "remote", "mimo type"
+assert load("commandcode.mcp.json")["mcpServers"]["looot"]["transport"] == "http", "command code transport"
+vibe = tomllib.loads((root / "configs/vibe.config.toml").read_text())["mcp_servers"][0]
+assert vibe["transport"] == "streamable-http" and vibe["auth"]["type"] == "oauth", "vibe shape"
+
 # skills
 for s in (root / "skills").glob("*/SKILL.md"):
     t = s.read_text()

@@ -1,0 +1,8 @@
+# Merge into ~/.vibe/config.toml (or .vibe/config.toml in a trusted folder).
+[[mcp_servers]]
+name = "looot"
+transport = "streamable-http"
+url = "https://api.looot.ai/mcp"
+
+[mcp_servers.auth]
+type = "oauth"

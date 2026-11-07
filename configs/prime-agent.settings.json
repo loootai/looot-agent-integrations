@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "looot": { "type": "http", "url": "https://api.looot.ai/mcp", "oauth": true }
+  }
+}
