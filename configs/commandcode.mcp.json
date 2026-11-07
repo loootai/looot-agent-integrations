@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "looot": { "transport": "http", "url": "https://api.looot.ai/mcp" }
+  }
+}

@@ -1,0 +1,6 @@
+// Merge into ~/.config/mimocode/mimocode.jsonc or .mimocode/mimocode.jsonc, then run: mimo mcp auth looot
+{
+  "mcp": {
+    "looot": { "type": "remote", "url": "https://api.looot.ai/mcp" }
+  }
+}

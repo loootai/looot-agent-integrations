@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "looot": {
+      "transport": "http",
+      "url": "https://api.looot.ai/mcp",
+      "headers": { "Authorization": "Bearer <your looot agent token>" }
+    }
+  }
+}
